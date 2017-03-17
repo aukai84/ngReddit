@@ -1,6 +1,7 @@
 import angular from 'angular';
 import {DefaultState, DefaultCtrl} from './default';
 import {AwwState, AwwStateCtrl, AwwServiceName, AwwService} from './aww';
+import {ProgState, ProgStateCtrl, ProgServiceName, ProgService} from './programmerhumor';
 import * as uiRouter from 'angular-ui-router';
 
 
@@ -19,6 +20,7 @@ angular.module(MODULE_NAME, ['ui.router'])
         $stateProvider
             .state(DefaultState.name, DefaultState)
             .state(AwwState.name, AwwState)
+            .state(ProgState.name, ProgState)
     })
     .directive('app', app)
     .run(($state) => {
@@ -26,7 +28,9 @@ angular.module(MODULE_NAME, ['ui.router'])
     })
     .controller(DefaultState.controller, DefaultCtrl)
     .controller(AwwState.controller, AwwStateCtrl)
+    .controller(ProgState.controller, ProgStateCtrl)
     .service(AwwServiceName, AwwService)
+    .service(ProgServiceName, ProgService)
 
 
 
