@@ -3,7 +3,6 @@ import {DefaultState, DefaultCtrl} from './default';
 import {AwwState, AwwStateCtrl, AwwServiceName, AwwService} from './aww';
 import * as uiRouter from 'angular-ui-router';
 
-console.log(AwwStateCtrl)
 
 import '../style/app.css';
 

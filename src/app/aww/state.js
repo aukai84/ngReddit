@@ -1,9 +1,9 @@
 const template = require('./template.html');
 
 export const AwwState = {
-    name: 'AwwState',
-    url: '/',
+    name: 'aww',
+    url: '/aww',
     template,
     controller: 'AwwStateCtrl',
-    controllerAs: 'AwwCtrl'
+    controllerAs: 'aww'
 };
